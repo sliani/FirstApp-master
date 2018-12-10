@@ -1,0 +1,31 @@
+<h2>Jeu</h2>
+
+<form>
+    <div class="form-group">
+        <label>Votre login</label>
+        <input id="login"  name="login" type="text" required pattern="^[A-Z][a-zA-Z\- ]+$" maxlength="50">
+   
+    </div>
+    <div class="form-group">
+        <label>Nombre d'essais</label>
+        <input id="nombreEssaisMax" name="nombre_essais" type="number" min="1" max="1000" required value="10">
+    </div>
+    <div class="form-group">
+        <label>Nombre maximum</label>
+        <select  id="nombreMax">
+            <option value="10">Facile</option>
+            <option value="100">Moyen</option>
+            <option value="1000">Difficile</option>
+            <option value="10000">Très difficile</option>
+            <option value="100000">Extrème</option>
+            <option value="1000000">Fou</option>
+
+        </select>
+    </div>
+    <hr>
+    <div class="form-group">
+        <input type="submit" value="Jouer">
+    </div>
+
+</form>
+<script src="scripts/jeu.js"></script>
